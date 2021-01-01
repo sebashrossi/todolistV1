@@ -1,0 +1,174 @@
+html {
+  background-color: #cdc9c3;
+  min-height: 1000px;
+  font-family: 'helvetica neue';
+}
+
+body {
+  background-color: transparent;
+}
+
+h1 {
+  color: #555555;
+  padding: 10px;
+}
+
+.tday, .date, .mnth, .yr {
+  text-align: center;
+}
+
+.mnth, .yr {
+  margin-top: -10%;
+}
+
+.date {
+  margin-top: -7%;
+}
+
+.day {
+  font-size: 5em;
+}
+
+.mes{
+  font-size: 2em;
+  font-weight: bold;
+}
+
+.box {
+  max-width: 400px;
+  position: relative;
+  height: 750px;
+  margin: 50px auto;
+  background: white;
+  border-radius: 5px;
+  box-shadow: 5px 5px 15px -5px rgba(0, 0, 0, 0.3);
+  overflow: scroll;
+}
+
+.item {
+  min-height: 70px;
+  display: flex;
+  align-items: center;
+  border-bottom: 1px solid #F1F1F1;
+  position: relative;
+}
+
+.item:last-child {
+  border-bottom: 0;
+}
+
+.addItem {
+  position: absolute;
+  bottom: 3%;
+  left: 2%;
+  min-height: 70px;
+  display: flex;
+  align-items: center;
+  border-bottom: 1px solid white;
+}
+
+.state {
+  position: relative;
+  left: 10px;
+}
+
+p {
+  margin: 0;
+  padding: 20px;
+  font-size: 20px;
+  font-weight: 200;
+  color: #4a4a48;
+}
+
+form.item {
+  text-align: center;
+  margin-left: 20px;
+}
+
+.add {
+  position: absolute;
+  bottom: 12.8%;
+  left: 47.3%;
+  min-height: 50px;
+  height: 100px;
+  width: 100px;
+  border-radius: 50%;
+  background-color: #19d3da;
+  border: 3px solid #19d3da;
+  color: white;
+  font-size: 60px;
+  padding-bottom: 6px;
+  text-align: center;
+}
+
+.add:hover {
+  background-color: transparent;
+  color: #19d3da;
+  border: 3px solid #19d3da;
+}
+
+.del {
+
+  position: absolute;
+  right: 10px;
+  min-height: 10px;
+  border-radius: 50%;
+  border-color: transparent;
+  background-color: transparent;
+  color: #cdc9c3;
+  font-size: 30px;
+  padding-bottom: 2px;
+  border-width: 0;
+  text-align: center;
+}
+
+.del:hover{
+  color: #19d3da;
+}
+
+
+/* MODAL */
+
+.addItem {
+  position: relative;
+}
+
+.postItem {
+  position: absolute;
+  right: 10px;
+  border: 3px solid #19d3da;
+  color: #19d3da;
+}
+
+.postItem:hover {
+  background-color: #19d3da;
+  color: white;
+  border: 3px solid #19d3da;
+}
+
+input[type="text"] {
+  text-align: center;
+  height: 60px;
+  top: 10px;
+  border: none;
+  background: transparent;
+  font-size: 20px;
+  font-weight: 200;
+  width: 313px;
+}
+
+input[type="text"]:focus {
+  outline: none;
+
+}
+
+::placeholder {
+  color: grey;
+  opacity: 1;
+}
+
+footer {
+  color: white;
+  color: rgba(0, 0, 0, 0.5);
+  text-align: center;
+}
