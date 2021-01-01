@@ -11,7 +11,7 @@ app.use(bodyParser.urlencoded({
 }));
 app.use(express.static("public"));
 
-mongoose.connect("mongodb+srv://admin-<username:password@clustertodo.budsw.mongodb.net/<database>?retryWrites=true&w=majority", {
+mongoose.connect("mongodb+srv://admin-<username:password>@clustertodo.budsw.mongodb.net/<database>?retryWrites=true&w=majority", {
   useNewUrlParser: true,
   useUnifiedTopology: true
 });
